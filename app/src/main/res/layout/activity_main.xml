@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.joseandres.operaciones.MainActivity"
+    android:background="#f30707">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa primer numero:"
+        android:id="@+id/txv1"
+        android:textSize="20dp"
+        android:textColor="#fcfbfb"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingrese segundo numero:"
+        android:id="@+id/txv2"
+        android:textSize="20dp"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/txv1"
+        android:layout_alignParentStart="true"
+        android:textColor="#fcfbfb" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="3"
+        android:id="@+id/edt1"
+        android:layout_above="@+id/txv2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="2"
+        android:id="@+id/edt2"
+        android:layout_alignBottom="@+id/txv2"
+        android:layout_alignEnd="@+id/edt1"
+        android:editable="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMA"
+        android:id="@+id/btn1"
+        android:textColor="#fcfbfb"
+        android:background="#711919"
+        android:onClick="sumar"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/txv2"
+        android:layout_toStartOf="@+id/btn3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTA"
+        android:id="@+id/btn2"
+        android:textColor="#fcfbfb"
+        android:background="#711919"
+        android:onClick="restar"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_alignEnd="@+id/txv1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MULTIPLICAR"
+        android:id="@+id/btn3"
+        android:textColor="#fcfbfb"
+        android:background="#711919"
+        android:onClick="multiplicar"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/btn2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIVIDIR"
+        android:id="@+id/btn4"
+        android:textColor="#fcfbfb"
+        android:background="#711919"
+        android:onClick="dividir"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/btn2"
+        android:layout_toEndOf="@+id/txv2" />
+
+</RelativeLayout>
